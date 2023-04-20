@@ -1,0 +1,23 @@
+<h1>Dashboard</h1>
+
+<p>Total de registros: <%= @total_registros %></p>
+<p>Total de ingresos: <%= @total_ingresos %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Ingresos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @datos.each do |dato| %>
+      <tr>
+        <td><%= dato['id'] %></td>
+        <td><%= dato['nombre'] %></td>
+        <td><%= dato['ingresos'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
