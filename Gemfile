@@ -70,3 +70,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# group :development, :test do  ## Added to try to solve Dotenv issues
+#   gem 'dotenv-rails'
+# end

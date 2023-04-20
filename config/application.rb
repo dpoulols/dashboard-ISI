@@ -1,10 +1,14 @@
-require_relative "boot"
+Dotenv.load
 
-require "rails/all"
+require_relative 'boot'
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+# if ['development', 'test'].include? ENV['RAILS_ENV'] ## Added to try to solve issue with Dotenv
+#   Dotenv::Railtie.load
+# end
 
 module DashboardIsi
   class Application < Rails::Application
