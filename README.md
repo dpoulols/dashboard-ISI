@@ -29,4 +29,4 @@ Things you may want to cover:
     To load files under the lib directory.
     To load gem dependencies that have require: false in the Gemfile.
 
- - 
+ - Ruby naming conventions: https://gist.github.com/alexpchin/f5d2be2ef3735889d315
